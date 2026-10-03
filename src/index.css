@@ -1243,6 +1243,15 @@ body {
   to { opacity: 1; transform: scale(1); }
 }
 
+/* Certificate Thumbnail Hover */
+.cert-thumbnail-box:hover .cert-overlay {
+  opacity: 1 !important;
+}
+
+.cert-thumbnail-box:hover img {
+  transform: scale(1.03);
+}
+
 /* --------------------------------------------------------------------------
    RESPONSIVE QUERIES
    -------------------------------------------------------------------------- */

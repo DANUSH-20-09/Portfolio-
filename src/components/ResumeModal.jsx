@@ -46,10 +46,10 @@ EDUCATION:
 - VOWEL INDIA SCHOOL: Secondary Education (2022 | Percentage: 75.67%)
 
 CERTIFICATIONS:
-- Java for Beginners – Core programming fundamentals and object-oriented design
-- Oracle APEX Cloud Developer Certified Professional
-- Oracle Cloud Infrastructure 2025 Certified Generative AI Professional
-- Agentic AI: AI agents, LLM-based workflows, tool usage, and multi-agent systems
+- Oracle Cloud Infrastructure 2025 Certified Generative AI Professional (Oracle University, ID: 102867678OCI25GAIOCP)
+- Oracle APEX Cloud Developer Certified Professional (Oracle University, ID: 102867678APEX24CDOCP)
+- Oracle AI Database SQL Certified Associate (Oracle University, ID: 103517558DB23AISQLOCA)
+- Data Analytics Academic Internship Certification (Sun Square Technologies Pvt. Ltd., Reg No: 111524204042)
 `;
 
   const handleCopy = () => {
@@ -207,10 +207,11 @@ CERTIFICATIONS:
               // EDUCATION & CERTIFICATIONS
             </h3>
             <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
-              <div>• <strong>R.M.D. Engineering College:</strong> B.Tech in AI & ML (CGPA: 7.1)</div>
-              <div>• <strong>Oracle Cloud Infrastructure 2025:</strong> Certified Generative AI Professional</div>
-              <div>• <strong>Oracle University:</strong> APEX Cloud Developer Certified Professional</div>
-              <div>• <strong>Agentic AI Mastery:</strong> Autonomous Agents, Multi-Agent Systems, LangGraph</div>
+              <div>• <strong>R.M.D. Engineering College:</strong> B.Tech in Artificial Intelligence & Data Science / ML (CGPA: 7.1)</div>
+              <div>• <strong>Oracle Cloud Infrastructure 2025:</strong> Certified Generative AI Professional (ID: 102867678OCI25GAIOCP)</div>
+              <div>• <strong>Oracle University:</strong> APEX Cloud Developer Certified Professional (ID: 102867678APEX24CDOCP)</div>
+              <div>• <strong>Oracle University:</strong> Oracle AI Database SQL Certified Associate (ID: 103517558DB23AISQLOCA)</div>
+              <div>• <strong>Sun Square Technologies:</strong> Data Analytics Academic Internship Certification</div>
             </div>
           </div>
 
