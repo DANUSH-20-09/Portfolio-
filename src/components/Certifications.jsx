@@ -65,26 +65,6 @@ const Certifications = () => {
         'Data Definition (DDL) & Data Manipulation (DML)',
         'Database Optimization & Relational Performance'
       ]
-    },
-    {
-      id: 'sun-square-internship',
-      title: 'Data Analytics Academic Internship Certification',
-      issuer: 'Sun Square Technologies Pvt. Ltd.',
-      badge: 'Industry Internship',
-      date: 'July 13, 2026',
-      validity: 'Academic Internship (11-06-2026 to 11-07-2026)',
-      credentialId: 'Reg No: 111524204042 (R.M.D. Engg College)',
-      recipient: 'Mr. P. DANUSH',
-      imageUrl: './certificates/sun-square-data-analytics-internship.png',
-      pdfUrl: './certificates/sun-square-data-analytics-internship.pdf',
-      icon: <Award size={22} />,
-      topics: [
-        'Data Analytics Pipelines & Dataset Engineering in Python',
-        'Movie Recommendation ML Engine Implementation',
-        'Exploratory Data Analysis (EDA) & Feature Scaling',
-        'Data Visualization & Analytical Problem Solving',
-        'Model Evaluation & Real-World Dataset Insights'
-      ]
     }
   ];
 
@@ -96,7 +76,7 @@ const Certifications = () => {
         <div className="section-heading-row">
           <h2 className="section-title">Certifications & Honors</h2>
           <p className="section-desc">
-            Official industry certifications recognized by Oracle Corporation and practical industry experience certificates. Click any certificate to preview high-resolution documents and download PDFs.
+            Official industry certifications recognized by Oracle Corporation in Generative AI, Cloud APEX Applications, and AI Database Engineering.
           </p>
         </div>
 

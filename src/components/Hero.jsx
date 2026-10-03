@@ -50,9 +50,9 @@ const Hero = ({ onOpenResume, onOpenContact }) => {
           <span>AI & MACHINE LEARNING ENGINEER</span>
         </div>
 
-        {/* Giant Geometric Title "PORTFOLIO" Matching Screenshot */}
+        {/* Giant Geometric Title "DANUSH" */}
         <h1 className="hero-giant-title">
-          PORTFOLIO
+          DANUSH
         </h1>
 
         {/* Bottom Row: Left statement, Right CTA button */}
