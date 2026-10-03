@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Award, BookOpen, Calendar, CheckCircle } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 const Education = () => {
   const educationData = [
@@ -33,50 +33,58 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" style={{ padding: '60px 0', borderTop: '1px solid var(--border-color)' }}>
-      <div className="section-header">
-        <div className="section-tag">Academic Background</div>
-        <h2 className="section-title">Education & Foundation</h2>
-      </div>
+    <section id="education" className="studio-section">
+      <div className="studio-container">
+        
+        <div className="section-eyebrow">ACADEMIC FOUNDATION</div>
+        <div className="section-heading-row">
+          <h2 className="section-title">Education & Qualifications</h2>
+          <p className="section-desc">
+            Strong formal education in Artificial Intelligence, Computer Science principles, and Advanced Mathematics.
+          </p>
+        </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
-        {educationData.map((edu, idx) => (
-          <div key={idx} className="glass-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-            <div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-                <div style={{ background: 'rgba(255,26,64,0.12)', padding: '10px', borderRadius: '12px' }}>
-                  <GraduationCap size={24} color="#ff1a40" />
+        <div className="dual-section-grid">
+          {educationData.map((edu, idx) => (
+            <div key={idx} className="edu-cert-card">
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '18px' }}>
+                  <div className="highlight-icon" style={{ marginBottom: 0, width: '42px', height: '42px' }}>
+                    <GraduationCap size={20} />
+                  </div>
+                  <span className="project-category-badge">{edu.score}</span>
                 </div>
-                <span className="badge-tag">{edu.score}</span>
+
+                <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', fontWeight: 600, marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <Calendar size={14} color="var(--accent-coral)" />
+                  {edu.status}
+                </div>
+
+                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: 'var(--text-primary)', fontWeight: 800, marginBottom: '6px' }}>
+                  {edu.institution}
+                </h3>
+
+                <div style={{ fontSize: '0.98rem', color: 'var(--accent-coral)', fontWeight: 700, marginBottom: '10px' }}>
+                  {edu.degree}
+                </div>
+
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', fontWeight: 600, marginBottom: '12px' }}>
+                  Field: {edu.specialization}
+                </p>
+
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: 1.6 }}>
+                  {edu.highlights}
+                </p>
               </div>
 
-              <div style={{ fontSize: '0.82rem', color: '#64748b', fontWeight: 600, marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <Calendar size={14} />
-                {edu.status}
+              <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid var(--border-color)', fontSize: '0.82rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <MapPin size={14} />
+                <span>{edu.location}</span>
               </div>
-
-              <h3 style={{ fontSize: '1.25rem', color: '#ffffff', fontWeight: 800, marginBottom: '6px', fontFamily: 'var(--font-heading)' }}>
-                {edu.institution}
-              </h3>
-
-              <div style={{ fontSize: '0.98rem', color: '#ff1a40', fontWeight: 600, marginBottom: '12px' }}>
-                {edu.degree}
-              </div>
-
-              <p style={{ color: '#cbd5e1', fontSize: '0.88rem', fontWeight: 500, marginBottom: '12px' }}>
-                <strong>Field:</strong> {edu.specialization}
-              </p>
-
-              <p style={{ color: '#94a3b8', fontSize: '0.86rem', lineHeight: 1.6 }}>
-                {edu.highlights}
-              </p>
             </div>
+          ))}
+        </div>
 
-            <div style={{ marginTop: '20px', paddingTop: '14px', borderTop: '1px solid var(--border-color)', fontSize: '0.82rem', color: '#64748b' }}>
-              📍 {edu.location}
-            </div>
-          </div>
-        ))}
       </div>
     </section>
   );
